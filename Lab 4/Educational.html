@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<style>
+    .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+
+        .sidenav a, .dropdown-btn {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+        }
+
+
+            .sidenav a:hover, .dropdown-btn:hover {
+                color: #f1f1f1;
+            }
+
+
+    .main {
+        margin-left: 200px;
+        font-size: 20px;
+        padding: 0px 10px;
+    }
+
+
+    .active {
+        background-color: green;
+        color: white;
+    }
+
+
+    .dropdown-container {
+        display: none;
+        background-color: #262626;
+        padding-left: 8px;
+    }
+
+
+    .fa-caret-down {
+        float: right;
+        padding-right: 8px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #f1f1f1;
+        padding: 20px;
+        font-family: Arial;
+    }
+
+
+    .main {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 50px;
+        word-break: break-all;
+    }
+
+    .row {
+        margin: 8px -16px;
+    }
+
+
+        .row,
+        .row > .column {
+            padding: 8px;
+        }
+
+
+    .column {
+        float: left;
+        width: 30%;
+    }
+
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    .content {
+        background-color: white;
+        padding: 10px;
+    }
+
+
+    @media screen and (max-width: 900px) {
+        .column {
+            width: 50%;
+        }
+    }
+
+
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
+</style>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="main">
+
+
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <p>
+                        <a href="https://www.amazon.com/Ethics-Educational-Leadership-Allyn-Bacon/dp/0132907100/ref=sr_1_6?crid=1W48NCLWZ3HDC&keywords=educational&qid=1636212874&s=books&sprefix=educational%2Cstripbooks-intl-ship%2C302&sr=1-6">
+                            <img src="edu1.jpg" alt="Ethics of Educational Leadership" style="width:100%">
+                            <h3>Ethics of Educational Leadership</h3>
+                        </a>
+                        <h3>By Ronald Rebore</h3>
+                    </p>
+                    <p>Product Code: E001</p>
+                    <p>Stock: Available</p>
+                    <p>Price: RM 55.00</p>
+                    <h4>Description:</h4>
+                    <p>In The Ethics of Educational Leadership, the author of one of the leading texts in human resource administration presents a practical resource dealing with significant ethical issues involved in building and central office administration.In it, Ronald Rebore presents the ethical ideas and notions of 20 philosophers and psychologists applied to the practice of educational leadership. The book helps tomorrow’s educational leaders evaluate the philosophical ideas of others, and use what they discover to develop their own way of approaching their leadership responsibilities.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <p>
+                        <a href="https://www.amazon.com/Introduction-Educational-Research-Craig-Mertler/dp/1544388314/ref=sr_1_1?crid=1W48NCLWZ3HDC&keywords=educational&qid=1636212874&s=books&sprefix=educational%2Cstripbooks-intl-ship%2C302&sr=1-1">
+                            <img src="edu2.jpg" alt="Introduction to Educational Research" style="width:100%">
+                            <h3>Introduction to Educational Research </h3>
+                        </a>
+                        <h3>By Craig A. Mertler</h3>
+                    </p>
+                    <p>Product Code: E002</p>
+                    <p>Stock: Limited</p>
+                    <p>Price: RM 105.42</p>
+                    <h4>Description:</h4>
+                    <p>This Third Edition of Craig Mertler’s practical text helps readers every step of the way as they plan and execute their first educational research project. Offering balanced coverage of qualitative and quantitative methods, an emphasis on ethics, and a wealth of new examples and concrete applications, the new edition continues to use conversational, nontechnical language to help students clearly understand and apply research concepts, principles, procedures, and terminology. </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <p>
+                        <a href="https://www.amazon.com/Small-Teaching-Everyday-Lessons-Learning/dp/1119755549/ref=sr_1_3?crid=1W48NCLWZ3HDC&keywords=educational&qid=1636212874&s=books&sprefix=educational%2Cstripbooks-intl-ship%2C302&sr=1-3">
+                            <img src="edu3.jpg" alt="Small Teaching" style="width:100%">
+                            <h3>Small Teaching: Everyday Lessons from the Science of Learning 2nd Edition</h3>
+                        </a>
+                        <h3>By James M. Lang</h3>
+                    </p>
+                    <p>Product Code: E003</p>
+                    <p>Stock: Available</p>
+                    <p>Price: RM 98.99</p>
+                    <h4>Description:</h4>
+                    <p>A freshly updated edition featuring research-based teaching techniques that faculty in any discipline can easily implement 
+
+                        Research into how we learn can help facilitate better student learning—if we know how to apply it. Small Teaching fills the gap in higher education literature between the primary research in cognitive theory and the classroom environment. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidenav">
+        <a href="http://127.0.0.1:5500/Homepage.html">Home</a>
+        <a href="http://127.0.0.1:5500/Register%20Form.html">Registration</a>
+        <button class="dropdown-btn">Categories
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="http://127.0.0.1:5500/Horror.html">Horror</a>
+            <a href="http://127.0.0.1:5500/Fiction.html">Fiction</a>
+            <a href="http://127.0.0.1:5500/nonFiction.html">Non Fiction</a>
+            <a href="http://127.0.0.1:5500/Romance.html">Romance</a>
+            <a href="http://127.0.0.1:5500/Educational.html">Educational</a>
+        </div>
+        <a href="http://127.0.0.1:5500/product.html">Buy Our Products</a>
+    </div>
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+        } else {
+        dropdownContent.style.display = "block";
+        }
+        });
+         }
+    </script>
+</body>
+</html>

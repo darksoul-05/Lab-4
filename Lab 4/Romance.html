@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<style>
+    .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+
+        .sidenav a, .dropdown-btn {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+        }
+
+
+            .sidenav a:hover, .dropdown-btn:hover {
+                color: #f1f1f1;
+            }
+
+
+    .main {
+        margin-left: 200px;
+        font-size: 20px;
+        padding: 0px 10px;
+    }
+
+
+    .active {
+        background-color: green;
+        color: white;
+    }
+
+
+    .dropdown-container {
+        display: none;
+        background-color: #262626;
+        padding-left: 8px;
+    }
+
+
+    .fa-caret-down {
+        float: right;
+        padding-right: 8px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #f1f1f1;
+        padding: 20px;
+        font-family: Arial;
+    }
+
+   
+    .main {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 50px;
+        word-break: break-all;
+    }
+
+    .row {
+        margin: 8px -16px;
+    }
+
+       
+        .row,
+        .row > .column {
+            padding: 8px;
+        }
+
+   
+    .column {
+        float: left;
+        width: 30%;
+    }
+
+   
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    
+    .content {
+        background-color: white;
+        padding: 10px;
+    }
+
+   
+    @media screen and (max-width: 900px) {
+        .column {
+            width: 50%;
+        }
+    }
+
+    
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
+</style>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="main">
+
+
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <p><a href="https://www.amazon.com/Opposite-Always-Justin-Reynolds/dp/0062748378/ref=sr_1_1?keywords=opposite+of+always&qid=1636211761&s=books&sprefix=opposite+%2Cstripbooks-intl-ship%2C336&sr=1-1">
+                    <img src="opposite.jpg" alt="Opposite of always" style="width:100%">
+                    <h3>Opposite of Always</h3></a>
+                    <h3>By Justin A. Reynolds</h3>
+                </p>
+                <p>Product Code: R010</p>
+                <p>Stock: Available</p>
+                <p>Price: RM 65.00</p>
+                <h4>Description</h4>
+                <p>When Jack and Kate meet at a party, bonding until sunrise over their mutual love of Froot Loops and their favorite flicks, Jack knows he’s falling—hard. Soon she’s meeting his best friends, Jillian and Franny, and Kate wins them over as easily as she did Jack.But then Kate dies. And their story should end there.Yet Kate’s death sends Jack back to the beginning, the moment they first meet, and Kate’s there again. Healthy, happy, and charming as ever. Jack isn’t sure if he’s losing his mind.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <p><a href="https://www.goodreads.com/book/show/49243059-the-new-girl">
+                    <img src="new.jpg" alt="New" style="width:100%">
+                    <h3>The New Girl</h3></a>
+                    <h3>By Jillian Adams</h3>
+                </p>
+                <p>Product Code: R020</p>
+                <p>Stock: Available</p>
+                <p>Price: RM 80.45</p>
+                <h4>Description</h4>
+                <p>A new girl at school who is serious about her studies. A football player with nothing but fun on his mind. Can two teenagers from opposite worlds find love?Sophie Blake is used to change. She's used to being the new kid at school. But she's never had the privilege of attending a school like Oak Brook Academy. She's certainly never pictured herself at a boarding school with kids who have more money than what she could even imagine spending.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <p><a href="https://www.amazon.com/Fault-Our-Stars-John-Green/dp/014242417X/ref=sr_1_1?keywords=fault+in+our+stars&qid=1636212098&s=books&sprefix=fault+%2Cstripbooks-intl-ship%2C298&sr=1-1">
+                            <img src="fault.jpg" alt="Fault" style="width:100%">
+                            <h3>The Fault in Our Stars</h3></a>
+                            <h3>By John Green</h3>
+                        </p>
+                        <p>Product Code: R030</p>
+                        <p>Stock: Available</p>
+                        <p>Price: RM 40.90</p>
+                        <h4>Description</h4>
+                        <p>Despite the tumor-shrinking medical miracle that has bought her a few years, Hazel has never been anything but terminal, her final chapter inscribed upon diagnosis. But when a gorgeous plot twist named Augustus Waters suddenly appears at Cancer Kid Support Group, Hazel’s story is about to be completely rewritten.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidenav">
+        <a href="http://127.0.0.1:5500/Homepage.html">Home</a>
+        <a href="http://127.0.0.1:5500/Register%20Form.html">Registration</a>
+        <button class="dropdown-btn">Categories
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="http://127.0.0.1:5500/Horror.html">Horror</a>
+            <a href="http://127.0.0.1:5500/Fiction.html">Fiction</a>
+            <a href="http://127.0.0.1:5500/nonFiction.html">Non Fiction</a>
+            <a href="http://127.0.0.1:5500/Romance.html">Romance</a>
+            <a href="http://127.0.0.1:5500/Educational.html">Educational</a>
+        </div>
+        <a href="http://127.0.0.1:5500/product.html">Buy Our Products</a>
+    </div>
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+        } else {
+        dropdownContent.style.display = "block";
+        }
+        });
+         }
+    </script>
+</body>
+</html>

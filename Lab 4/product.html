@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<style>
+    .cart a {
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+    button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+.add-button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 8px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+    *{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: rgb(255, 255, 255);
+  font-family: sans-serif;
+
+}
+
+.mr-container{
+	background-color: rgb(255, 255, 255);
+	width: 1150px;
+	padding: 20px;
+	margin: 0 auto;
+	display: flex;
+	margin-top: 0px;
+}
+
+.sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+        
+        .sidenav a, .dropdown-btn {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+        }
+
+           
+            .sidenav a:hover, .dropdown-btn:hover {
+                color: #f1f1f1;
+            }
+
+    
+    .main {
+        margin-left: 200px;
+        font-size: 20px;
+        padding: 0px 10px;
+    }
+
+    
+    .active {
+        background-color: green;
+        color: white;
+    }
+
+   
+    .dropdown-container {
+        display: none;
+        background-color: #262626;
+        padding-left: 8px;
+    }
+
+  
+    .fa-caret-down {
+        float: right;
+        padding-right: 8px;
+    }
+
+
+</style>
+<html>
+    <body>
+        <div class="sidenav">
+            <a href="http://127.0.0.1:5500/Homepage.html">Home</a>
+            <a href="http://127.0.0.1:5500/Register%20Form.html">Registration</a>
+            <button class="dropdown-btn">Categories
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="http://127.0.0.1:5500/Horror.html">Horror</a>
+                <a href="http://127.0.0.1:5500/Fiction.html">Fiction</a>
+                <a href="http://127.0.0.1:5500/nonFiction.html">Non Fiction</a>
+                <a href="http://127.0.0.1:5500/Romance.html">Romance</a>
+                <a href="http://127.0.0.1:5500/Educational.html">Educational</a>
+            </div>
+            
+            <a href="http://127.0.0.1:5500/product.html">Buy Our Products</a>
+            <div>
+            <ol class="cart">
+                <a href="cart.html">
+                    Item Selected : <span>0</span>
+                </a>
+            </ol>
+            </div>
+        </div>
+        <div class="mr-container">
+          <div class="sale-info-parent">
+                <div class="info-title-parent">
+                    <h1>Products</h1>
+                </div>
+                <div class="info-clicks-parent">
+                    <form id="booklist">
+                        <div>
+                            <alt="book1">
+                            <class="additem">Carrie (RM100.50)
+                            <div>
+                                <button class="add-button">Add Cart</button>
+                            </div>
+                        </div>
+                        <div>
+                            <alt="book2">
+                            <class="additem">Frankenstien (RM99.40)
+                            <div>
+                                <button class="add-button">Add Cart</button>
+                            </div>
+                        </div>
+                        <div>
+                            <alt="book3">
+                            <class="additem">Shutter (RM150.30)
+                            <div>
+                                <button class="add-button">Add Cart</button>
+                            </div>
+                        </div>
+                        <div>
+                            <alt="book4">
+                            <class="additem">The Last Thing He Told Me: A Novel (RM150)
+                            <div>
+                                <button class="add-button">Add Cart</button>
+                            </div>
+                        </div>
+                        <div>
+                            <alt="book5">
+                            <class="additem">The Arrangement (RM250)
+                            <div>
+                                <button class="add-button">Add Cart</button>
+                            </div>
+                        </div>
+                        <div>
+                            <alt="book6">
+                            <class="additem">The Book of Longings: A Novel (RM67)
+                            <div>
+                                <button class="add-button">Add Cart</button>
+                            </div>
+                        </div>
+                        <div>
+                            <alt="book7">
+                            <class="additem">Where the Crawdads Sing (RM120)
+                            <div>
+                                <button class="add-button">Add Cart</button>
+                            </div>
+                        </div>
+                        <div>
+                            <alt="book8">
+                            <class="additem">The Spy and the Traitor: The Greatest Espionage Story of the Cold War (RM89.99)
+                            <div>
+                                <button class="add-button">Add Cart</button>
+                            </div>
+                        </div>
+                        <div>
+                            <alt="book9">
+                            <class="additem">Blood and Thunder: The Epic Story of Kit Carson and the Conquest of the American West (RM55.99)
+                            <div>
+                                <button class="add-button">Add Cart</button>
+                            </div>
+                        </div>
+                        <div>
+                            <alt="book10">
+                            <class="additem">Opposite of Always (RM65)
+                            <div>
+                                <button class="add-button">Add Cart</button>
+                            </div>
+                        </div>
+                        <div>
+                            <alt="book11">
+                            <class="additem">The New Girl (RM80.65)
+                            <div>
+                                <button class="add-button">Add Cart</button>
+                            </div>
+                        </div>
+                        <div>
+                            <alt="book12">
+                            <class="additem">The Fault in Our Stars (RM40.90)
+                            <div>
+                                <button class="add-button">Add Cart</button>
+                            </div>
+                        </div>
+                        <div>
+                            <alt="book13">
+                            <class="additem">Ethics of Educational Leadership (RM55)
+                            <div>
+                                <button class="add-button">Add Cart</button>
+                            </div>
+                        </div>
+                        <div>
+                            <alt="book14">
+                            <class="additem">Introduction to Educational Research (RM105.42)
+                            <div>
+                                <button class="add-button">Add Cart</button>
+                            </div>
+                        </div>
+                        <div>
+                            <alt="book15">
+                            <class="additem">Small Teaching: Everyday Lessons from the Science of Learning 2nd Edition (RM98.99)
+                            <div>
+                                <button class="add-button">Add Cart</button>
+                                <p id="demo"></p>
+                                <p id="test"></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+        <script>
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+    
+            for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+            } else {
+            dropdownContent.style.display = "block";
+            }
+            });
+             }
+        </script>
+    </body>
+</html>

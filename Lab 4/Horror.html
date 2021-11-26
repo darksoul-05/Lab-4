@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<style>
+    .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+
+        .sidenav a, .dropdown-btn {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+        }
+
+
+            .sidenav a:hover, .dropdown-btn:hover {
+                color: #f1f1f1;
+            }
+
+
+    .main {
+        margin-left: 200px;
+        font-size: 20px;
+        padding: 0px 10px;
+    }
+
+
+    .active {
+        background-color: green;
+        color: white;
+    }
+
+
+    .dropdown-container {
+        display: none;
+        background-color: #262626;
+        padding-left: 8px;
+    }
+
+
+    .fa-caret-down {
+        float: right;
+        padding-right: 8px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #f1f1f1;
+        padding: 20px;
+        font-family: Arial;
+    }
+
+   
+    .main {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 50px;
+        word-break: break-all;
+    }
+
+    .row {
+        margin: 8px -16px;
+    }
+
+       
+        .row,
+        .row > .column {
+            padding: 8px;
+        }
+
+   
+    .column {
+        float: left;
+        width: 30%;
+    }
+
+   
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    
+    .content {
+        background-color: white;
+        padding: 10px;
+    }
+
+   
+    @media screen and (max-width: 900px) {
+        .column {
+            width: 50%;
+        }
+    }
+
+    
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
+</style>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="main">
+
+
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <p><a href="https://www.amazon.com/Carrie-Stephen-King/dp/0307743667/ref=sr_1_1?keywords=carrie+stephen+king&qid=1636212370&s=books&sprefix=Carrie%2Cstripbooks-intl-ship%2C313&sr=1-1">
+                    <img src="Carrie-a.jpg" alt="Carrie" style="width:100%">
+                    <h3>Carrie</h3></a>
+                    <h3>By Stephen King</h3>
+                </p>
+                <p>Product Code: H101</p>
+                <p>Stock: Limited</p>
+                <p>Price: RM 100.50</p>
+                <h4>Description:</h4>
+                <p>Carrie White may be picked on by her classmates, but she has a gift. She can move things with her mind. Doors lock. Candles fall. This is her power and her problem. Then, an act of kindness, as spontaneous as the vicious taunts of her classmates, offers Carrie a chance to be a normal...until an unexpected cruelty turns her gift into a weapon of horror and destruction that no one will ever forget.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <p><a href="https://www.amazon.com/Frankenstein-Signet-Classics-Mary-Shelley/dp/0451532244/ref=sr_1_1?keywords=frankenstein&qid=1636212707&s=books&sprefix=frank%2Cstripbooks-intl-ship%2C305&sr=1-1">
+                    <img src="frank.jpg" alt="Frank" style="width:100%">
+                    <h3>Frankenstein</h3></a>
+                    <h3>By Marry Shelby</h3>
+                </p>
+                <p>Product Code: H102</p>
+                <p>Stock: Available</p>
+                <p>Price: RM 99.40</p>
+                <h4>Description:</h4>
+                <p>For centuries, the story of Victor Frankenstein and the monster he created has held readers spellbound. On the surface, it is a novel of tense and steadily mounting dread. On a more profound level, it illuminates the triumph and tragedy of the human condition in its portrayal of a scientist who oversteps the bounds of conscience, and of a creature tortured by the solitude of a world in which he does not belong.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <p><a href="https://www.amazon.com/Shutter-Courtney-Alameda/dp/1250079969/ref=sr_1_2?crid=3JF8RX7BJ6V05&keywords=shutter&qid=1636212454&s=books&sprefix=shutter%2Cstripbooks-intl-ship%2C301&sr=1-2">
+                            <img src="Shutter.jpg" alt="Shutter" style="width:100%">
+                            <h3>Shutter</h3></a>
+                            <h3>By Courtney Alameda</h3> 
+                        </p>
+                        <p>Product Code: H103</p>
+                        <p>Stock: Available</p>
+                        <p>Price: RM 150.30</p>
+                        <h4>Description:</h4>
+                        <p>Micheline Helsing is a tetrachromat-a girl who sees the auras of the undead in a prismatic spectrum. As one of the last descendants of the Van Helsing lineage, she has trained since childhood to destroy monsters both corporeal and spiritual: the corporeal undead go down by the bullet, the spiritual undead by the lens. With an analog SLR camera as her best weapon, Micheline exorcises ghosts by capturing their spiritual energy on film.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidenav">
+        <a href="http://127.0.0.1:5500/Homepage.html">Home</a>
+        <a href="http://127.0.0.1:5500/Register%20Form.html">Registration</a>
+        <button class="dropdown-btn">Categories
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="http://127.0.0.1:5500/Horror.html">Horror</a>
+            <a href="http://127.0.0.1:5500/Fiction.html">Fiction</a>
+            <a href="http://127.0.0.1:5500/nonFiction.html">Non Fiction</a>
+            <a href="http://127.0.0.1:5500/Romance.html">Romance</a>
+            <a href="http://127.0.0.1:5500/Educational.html">Educational</a>
+        </div>
+        <a href="http://127.0.0.1:5500/product.html">Buy Our Products</a>
+    </div>
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+        } else {
+        dropdownContent.style.display = "block";
+        }
+        });
+         }
+    </script>
+</body>
+</html>
